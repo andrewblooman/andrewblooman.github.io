@@ -28,22 +28,6 @@ const io = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Contact form (graceful demo handler)
-const form = document.querySelector('form.contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const subject = encodeURIComponent('Website enquiry from ' + (data.get('name') || ''));
-    const body = encodeURIComponent(
-      (data.get('message') || '') +
-      '\n\n— ' + (data.get('name') || '') +
-      '\n' + (data.get('email') || '')
-    );
-    window.location.href = `mailto:andrewblooman@gmail.com?subject=${subject}&body=${body}`;
-  });
-}
-
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

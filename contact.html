@@ -7,7 +7,7 @@
   <meta name="description" content="Get in touch with Andrew Blooman &mdash; Cloud Security Engineer based in London." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -45,66 +45,27 @@
 
 <section style="padding-top: 40px;">
   <div class="wrap">
-    <div class="contact-grid">
-
-      <div class="contact-info reveal">
-        <h3 style="font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; margin-bottom: 18px;">Direct lines</h3>
-        <p>The form is the easiest, but pick whichever channel suits you best.</p>
-
-        <div class="contact-direct">
-          <a href="mailto:andrewblooman@gmail.com">
-            <span class="lbl">Email</span>
-            <span class="val">andrewblooman@gmail.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/andrewblooman/" target="_blank" rel="noopener">
-            <span class="lbl">LinkedIn</span>
-            <span class="val">/in/andrewblooman &nbsp;&#8599;</span>
-          </a>
-          <a href="https://github.com/andrewblooman" target="_blank" rel="noopener">
-            <span class="lbl">GitHub</span>
-            <span class="val">@andrewblooman &nbsp;&#8599;</span>
-          </a>
-          <a href="https://medium.com/@andyblooman" target="_blank" rel="noopener">
-            <span class="lbl">Medium</span>
-            <span class="val">@andyblooman &nbsp;&#8599;</span>
-          </a>
-          <a href="https://www.credly.com/users/andrew-blooman/badges" target="_blank" rel="noopener">
-            <span class="lbl">Credly</span>
-            <span class="val">/andrew-blooman &nbsp;&#8599;</span>
-          </a>
-        </div>
+    <div class="reveal" style="max-width: 580px;">
+      <p class="lead">The best way to reach me is via LinkedIn — connect or send a message there.</p>
+      <div style="margin-top: 32px;">
+        <a class="btn" href="https://www.linkedin.com/in/andrewblooman/" target="_blank" rel="noopener">
+          Connect on LinkedIn <span class="arrow">&rarr;</span>
+        </a>
       </div>
-
-      <div class="reveal" style="transition-delay: 100ms;">
-        <h3 style="font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; margin-bottom: 18px;">Send a message</h3>
-        <form class="contact-form">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="field">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div>
-            <button class="btn" type="submit">
-              Send message <span class="arrow">&rarr;</span>
-            </button>
-          </div>
-          <p style="font-size: 0.82rem; color: var(--muted); margin-top: 4px;">
-            Submitting this form opens your email client with the message pre-filled. No data is sent to a server.
-          </p>
-        </form>
+      <div class="contact-direct" style="margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line);">
+        <a href="https://github.com/andrewblooman" target="_blank" rel="noopener">
+          <span class="lbl">GitHub</span>
+          <span class="val">@andrewblooman &nbsp;&#8599;</span>
+        </a>
+        <a href="https://medium.com/@andyblooman" target="_blank" rel="noopener">
+          <span class="lbl">Medium</span>
+          <span class="val">@andyblooman &nbsp;&#8599;</span>
+        </a>
+        <a href="https://www.credly.com/users/andrew-blooman/badges" target="_blank" rel="noopener">
+          <span class="lbl">Credly</span>
+          <span class="val">/andrew-blooman &nbsp;&#8599;</span>
+        </a>
       </div>
-
     </div>
   </div>
 </section>
@@ -141,7 +102,6 @@
     </div>
     <div class="footer-bottom">
       <div>&copy; <span id="year"></span> Andrew Blooman. All rights reserved.</div>
-      <div class="signal"><span class="dot"></span> Currently shipping at IG Group</div>
     </div>
   </div>
 </footer>

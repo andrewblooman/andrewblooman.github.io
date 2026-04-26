@@ -20,7 +20,7 @@
   /* Type */
   --font-display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Inter Tight', 'Helvetica Neue', system-ui, sans-serif;
-  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+  --font-mono:    'Inter Tight', 'Helvetica Neue', system-ui, sans-serif;
 
   /* Layout */
   --max:        1180px;
@@ -485,15 +485,9 @@ section { padding: var(--section-y) 0; }
   transform: translateY(-2px);
 }
 .cert .badge {
-  width: 52px; height: 52px;
-  border: 1px solid var(--accent);
-  background: var(--accent-soft);
-  display: grid; place-items: center;
-  color: var(--accent-deep);
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  width: 56px; height: 56px;
+  object-fit: contain;
+  display: block;
 }
 .cert .name {
   font-family: var(--font-display);
