@@ -513,7 +513,15 @@ section { padding: var(--section-y) 0; }
   padding: 32px 8px;
   border-bottom: 1px solid var(--line);
   transition: padding 240ms ease, background 240ms ease;
-  align-items: baseline;
+  align-items: center;
+}
+.post-thumb {
+  width: 100px;
+  height: 66px;
+  object-fit: cover;
+  border: 1px solid var(--line-soft);
+  display: block;
+  flex-shrink: 0;
 }
 .post:hover { padding-left: 20px; background: var(--paper-warm); }
 .post .num {
@@ -552,6 +560,7 @@ section { padding: var(--section-y) 0; }
 @media (max-width: 720px) {
   .post { grid-template-columns: 1fr; gap: 8px; }
   .post-arrow { display: none; }
+  .post-thumb { display: none; }
 }
 
 /* ---------- Contact ---------- */
